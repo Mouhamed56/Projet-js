@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Devoir JavaScript — Interface de test</title>
+
+  <!-- LIAISON CSS -->
+  <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+  <header>
+    <h1>Devoir JavaScript — Interface interactive</h1>
+    <p>Testez ici toutes les fonctions du devoir : chaînes, tableaux et mathématiques.</p>
+  </header>
+
+  <main class="grid">
+
+    <!-- CHAÎNES -->
+    <section class="card">
+      <h2>Chaînes</h2>
+      <label>Texte</label>
+      <textarea id="textInput">bonjour le monde</textarea>
+
+      <div class="row">
+        <button id="btnInverse">Inverser</button>
+        <button id="btnCount">Compter</button>
+        <button id="btnTitle">Majuscules</button>
+      </div>
+
+      <label>Résultat</label>
+      <pre id="outString">(résultat)</pre>
+    </section>
+
+    <!-- TABLEAUX -->
+    <section class="card">
+      <h2>Tableaux</h2>
+      <label>Tableau (sépare par des virgules)</label>
+      <input id="arrInput" value="5,12,8,20,3">
+
+      <div class="row">
+        <button id="btnMax">Max</button>
+        <button id="btnMin">Min</button>
+        <button id="btnSum">Somme</button>
+        <button id="btnFilter">Filtrer >10</button>
+      </div>
+
+      <label>Résultat</label>
+      <pre id="outArray">(résultat)</pre>
+    </section>
+
+    <!-- MATH -->
+    <section class="card">
+      <h2>Math</h2>
+      <label>Nombre (entier)</label>
+      <input id="numInput" type="number" value="6">
+
+      <div class="row">
+        <button id="btnFact">Factorielle</button>
+        <button id="btnPrime">Est premier ?</button>
+        <button id="btnFib">Fibonacci (n termes)</button>
+      </div>
+
+      <label>Résultat</label>
+      <pre id="outNumber">(résultat)</pre>
+    </section>
+
+  </main>
+
+  <footer>
+    <small>Fichiers : Index.html • Index.css • index.js</small>
+  </footer>
+
+  <!-- LIAISON JS -->
+  <script src="index.js"></script>
+</body>
+</html>
